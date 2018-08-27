@@ -16,7 +16,7 @@ export class SwitchTemplate extends BaseForTemplate {
     return CompletionItemBuilder
       .create('switch', code)
       .description('switch statemeent (Go)')
-      .replace(`switch \${1:{{expr}}} {\ncase \${2:condition}: \n\${0}\n}`, position, true)
+      .replace(`switch \${1:{{expr}}} {\ncase \${2:condition}: \n${getIndentCharacters()}\${0}\n}`, position, true)
       .build()
   }
 }

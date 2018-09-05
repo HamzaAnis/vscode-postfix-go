@@ -20,8 +20,8 @@ All available templates (`expr` means the expression on which the template is ap
 | **.else**         | `if !expr` |
 | **.nil**          | `if expr == nil` |
 | **.notnil**       | `if expr != nil` |
-| **.for**          | `for index := range expr` |
-| **.forr**         | `for index, element := range expr` |
+| **.forr**         | `for index := range expr` |
+| **.for**          | `for index, element := range expr` |
 | **.return**       | `return expr` |
 | **.var**          | `name := expr` |
 | **.const**        | `const name type = expr` |
@@ -32,7 +32,7 @@ All available templates (`expr` means the expression on which the template is ap
 | **.error**        | `errors.New("expr")` |
 | **.struct**       | `type expr struct` |
 | **.interface**    | `type expr interface` |
-| **.switch**    | `switch expr` |
+| **.switch**       | `switch expr` |
 
 ## Author
 

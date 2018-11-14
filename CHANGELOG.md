@@ -19,3 +19,6 @@
 ## [0.0.11] - 2018-08-30
 - Added `switch` template.
 - Swapped templates of 'for` and `forr`.
+
+## [0.0.12] - 2018-11-04
+- Fixed custom template trailing period issue (#8)

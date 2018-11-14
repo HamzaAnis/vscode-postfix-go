@@ -33,7 +33,7 @@ export class PostfixCompletionProvider implements vsc.CompletionItemProvider {
 
     return this.templates
       .filter(t => t.canUse(code))
-      .map(t => t.buildCompletionItem(code, position, line.text.substring(dotIdx, position.character)))
+      .map(t => t.buildCompletionItem(code, position, line.text.substring(dotIdx + 1, position.character)))
   }
 
   resolveCompletionItem (item: vsc.CompletionItem, token: vsc.CancellationToken): vsc.ProviderResult<vsc.CompletionItem> {
